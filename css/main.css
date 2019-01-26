@@ -4,6 +4,15 @@ body {
 
 /* Containers */
 
+.container-wrapper {
+    
+}
+
+.container-wrapper--blue {
+    background-color: #0045c3;
+    color: white;
+}
+
 .alert-container {}
 
 .callout-container {
@@ -17,6 +26,7 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     position: relative;
 }
@@ -28,6 +38,11 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .quotes-container {}
@@ -134,14 +149,19 @@ body {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--blue {
     background-color: #0045c3;
 }
 
+.block-divider--white {
+    background-color: white;
+}
+
 .block-divider--short {
-    width: 45px;
+    width: 35px;
 }
 
 /* Buttons */
@@ -182,4 +202,49 @@ body {
     margin-bottom: 0;
     border: 1px solid transparent;
     border-radius: 0;
+}
+
+/* Page Header */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* Quotes */
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+blockquote.quote {
+    border-left: 0;
+}
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .glyphicon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    color: #0045c3;
+    margin-top: 15px;
 }
